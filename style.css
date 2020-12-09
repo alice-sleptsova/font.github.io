@@ -1,0 +1,851 @@
+body
+{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8f8f8;
+    font-family: Roboto;
+}
+
+.menu
+{
+	display: flex;
+    position: relative;
+    margin: 20px;
+    justify-content: flex-end;
+}
+
+.author
+{
+    /*display:block;
+    margin: 0 auto;
+    text-align: center;*/
+  
+    margin-top: 50px;
+    /*display: flex;*/
+    position: relative;
+    justify-content: right;
+
+    display:block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 17px;
+    color: #292a2a;
+    background: #f8f8f8;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: -1px -1px 2px rgba(255, 255, 255, 0),
+                 2px 2px 6px rgba(128, 128, 128, 0.4);
+    cursor: pointer;
+
+}
+
+.author:focus
+{
+    outline: none;
+}
+
+.author:hover
+{
+    color: #6f6f6f; 
+    box-shadow: -1px -1px 3px rgba(255,255,255,0.01),
+            2px 2px 6px rgba(128, 128, 128, 0.8), 
+            inset -2px -2px 10px rgba(255,255,255,0.05),
+            inset 2px 2px 10px rgba(128, 128, 128, 0.5);
+}
+
+
+a 
+{
+    color: #292a2a;
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 8px 12px;
+    box-shadow: -1px -1px 2px rgba(255, 255, 255, 0),
+                 2px 2px 6px rgba(128, 128, 128, 0.4);
+
+   /* position:absolute;
+      top:0;
+      right:0;*/
+    margin-right: 10px;
+    text-decoration: none;
+   
+   
+
+}
+a:hover
+{
+    color: #6f6f6f; 
+    box-shadow: -1px -1px 3px rgba(255,255,255,0.01),
+    2px 2px 6px rgba(128, 128, 128, 0.8), 
+    inset -2px -2px 10px rgba(255,255,255,0.05),
+    inset 2px 2px 10px rgba(128, 128, 128, 0.5);
+}
+
+img
+{    
+    position: relative; 
+}
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+h1
+{
+    text-align: center; 
+    font-size: 30px; 
+    font-weight: 400;
+    margin-bottom: 120px;
+    color: #292a2a;  
+}
+
+h3
+{    
+    text-align: center; 
+    font-size: 20px; 
+    font-weight: 400;
+    margin-bottom: 120px;
+    color: #292a2a;
+}
+
+
+.ramki
+{
+    /*padding: 50px;*/
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.column {
+   -webkit-column-width: 200px;
+    -moz-column-width: 200px;
+    column-width: 200px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    -webkit-column-rule: 1px solid #ccc;
+    -moz-column-rule: 1px solid #ccc;
+    column-rule: 1px solid #ccc;
+    padding-bottom:50px;
+
+}
+
+
+.conteiner
+{
+    justify-content: center;
+    align-items: center;
+	display: flex;
+}
+
+form
+{
+    display: grid;	
+	grid-template-columns: auto 200px auto;    
+}
+
+p
+{    
+    padding: 15px;
+    color: #292a2a;
+    font-size: 20px;
+    grid-column: 1 / 4;
+    }
+
+
+.firstWord
+{
+	text-align: right;
+	margin-top: 8px;	
+	grid-column: 1 / 2;
+}
+
+.lastWord
+{
+	 margin-top: 8px;
+     grid-column: 3 / 4;
+    margin-bottom: 20px;
+}
+
+.buttons
+{
+    margin-left: 8px;
+	grid-column: 2 / 3;
+}
+
+
+#results
+{
+	display:none;
+    margin-top: 80px;
+    margin-left: 150px;
+}
+
+.top
+{
+    display: flex;
+    position: relative;
+    margin: auto auto;
+    justify-content: flex-end;
+    margin: 30px;
+  
+}	
+
+
+.top .fa
+{
+    font-size: 20px; 
+}
+
+.conteiner label input
+
+
+{
+    text-align: center;
+    appearance: none;
+   -webkit-appearance: none;
+   cursor: pointer;
+     
+}
+.conteiner label .fa
+
+{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background: #f8f8f8;
+    line-height: 25px;
+    text-align: center;
+    margin: 0 4px;
+    color: #6f6f6f;
+    font-size: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: -1px -1px 3px rgba(255,255,255,0.1),
+             2px 2px 6px rgba(128, 128, 128, 0.8);
+}
+.conteiner label .fa:hover
+{
+    box-shadow: -1px -1px 3px rgba(255,255,255,0.1),
+             2px 2px 6px rgba(128, 128, 128, 0.8),
+             inset -2px -2px 10px rgba(255,255,255,0.05),
+             inset 2px 2px 10px rgba(128, 128, 128, 0.5);
+}
+.conteiner label input:checked ~ .fa
+
+{
+    color: rgb(11, 155, 73);
+    box-shadow: inset -1px -1px 3px rgba(255,255,255,0.1),
+                inset 2px 2px 6px rgb(128, 128, 128);
+    text-shadow: 0 0 2px #0b9b49;        
+}
+
+
+.fa fa-angle-left { display: inline; }
+@media only screen (min-device-width : 320px)
+and (max-device-width : 425px){
+    .fa fa-angle-left{ display: none; }}
+
+
+/*button
+{
+    display:block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 17px;
+    color: #292a2a;
+    background: #f8f8f8;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: -1px -1px 2px rgba(255, 255, 255, 0),
+                 2px 2px 6px rgba(128, 128, 128, 0.4);
+    cursor: pointer;
+}
+
+button:focus
+{
+    outline: none;
+}
+
+button:hover
+{
+    color: #6f6f6f; 
+    box-shadow: -1px -1px 3px rgba(255,255,255,0.01),
+            2px 2px 6px rgba(128, 128, 128, 0.8), 
+            inset -2px -2px 10px rgba(255,255,255,0.05),
+            inset 2px 2px 10px rgba(128, 128, 128, 0.5);
+}
+*/
+
+.final
+{
+    display:block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 17px;
+    color: #292a2a;
+    background: #f8f8f8;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: -1px -1px 2px rgba(255, 255, 255, 0),
+                 2px 2px 6px rgba(128, 128, 128, 0.4);
+    cursor: pointer; 
+}
+
+.final:focus
+{
+    outline: none;
+}
+
+.final:hover
+{
+    color: #6f6f6f; 
+    box-shadow: -1px -1px 3px rgba(255,255,255,0.01),
+            2px 2px 6px rgba(128, 128, 128, 0.8), 
+            inset -2px -2px 10px rgba(255,255,255,0.05),
+            inset 2px 2px 10px rgba(128, 128, 128, 0.5);
+}
+
+footer
+{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: #292a2a;
+    margin-bottom: 10px;
+}
+h4
+{    
+    text-align: center; 
+    font-size: 15px; 
+    font-weight: 400;
+    color: #292a2a;
+    margin: 0;
+    padding: 0;
+}
+
+
+.zagolovok
+{
+    text-align: left; 
+    font-size: 30px; 
+    font-weight: 400;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    color: #292a2a;
+    margin-left: 115px;
+}
+
+
+.tema
+{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/*.instagram a:hover {background: #3f729b; color: #fff;}
+.telegram a:hover {background: #249bd7; color: #fff;}*/
+
+
+@font-face {
+    font-family: Academy;
+    src: url(fonts/Academy.ttf);
+  }
+
+@font-face {
+    font-family: AGOpus;
+    src: url(fonts/AGOpus.ttf);
+}
+
+@font-face {
+    font-family: Airfool;
+    src: url(fonts/Airfool.otf);
+}
+
+@font-face {
+    font-family: Akrobat;
+    src: url(fonts/Akrobat.ttf);
+}
+
+@font-face {
+    font-family: AnselmSans;
+    src: url(fonts/AnselmSans.ttf);
+}
+
+@font-face {
+    font-family: Antonella;
+    src: url(fonts/Antonella.ttf);
+}
+
+@font-face {
+    font-family: Arial;
+    src: url(fonts/Arial.ttf);
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(fonts/Bebas.otf);
+}
+
+@font-face {
+    font-family: Berlingske Sans;
+    src: url(fonts/BerlingskeSans.otf);
+}
+
+@font-face {
+    font-family: Blender Pro;
+    src: url(fonts/BlenderPro.otf);
+}
+
+@font-face {
+    font-family: Bravo;
+    src: url(fonts/Bravo.otf);
+}
+
+@font-face {
+    font-family: Candara;
+    src: url(fonts/Candara.ttf);
+}
+
+@font-face {
+    font-family: Caravan;
+    src: url(fonts/Caravan.otf);
+}
+
+@font-face {
+    font-family: Cinematografica;
+    src: url(fonts/Cinematografica.ttf);
+}
+
+@font-face {
+    font-family: Cinzel;
+    src: url(fonts/Cinzel.ttf);
+}
+
+@font-face {
+    font-family: Circe;
+    src: url(fonts/Circe.otf);
+}
+
+@font-face {
+    font-family: Code Pro Black;
+    src: url(fonts/CodeProBlack.otf);
+}
+
+@font-face {
+    font-family: Cormorant Garamond;
+    src: url(fonts/CormorantGaramond.ttf);
+}
+
+@font-face {
+    font-family: Decima Mono X;
+    src: url(fonts/DecimaMonoX.otf);
+}
+
+@font-face {
+    font-family: Displace;
+    src: url(fonts/Displace.ttf);
+}
+
+@font-face {
+    font-family: Druk Wide;
+    src: url(fonts/DrukWide.otf);
+}
+
+@font-face {
+    font-family: EB Garamond;
+    src: url(fonts/EBGaramond.ttf);
+}
+
+@font-face {
+    font-family: EchoRevival;
+    src: url(fonts/EchoRevival.otf);
+}
+
+@font-face {
+    font-family: Fedra Sans Pro;
+    src: url(fonts/FedraSansPro.ttf);
+}
+
+@font-face {
+    font-family: Fira Sans;
+    src: url(fonts/FiraSans.ttf);
+}
+
+@font-face {
+    font-family: Furore;
+    src: url(fonts/Furore.otf);
+}
+
+@font-face {
+    font-family: Futura New Book;
+    src: url(fonts/FuturaNewBook.otf);
+}
+
+@font-face {
+    font-family: Garamond Premier Pro;
+    src: url(fonts/GaramondPremrPro.otf);
+}
+
+@font-face {
+    font-family: Golos;
+    src: url(fonts/Golos.ttf);
+}
+
+@font-face {
+    font-family: Grenouille;
+    src: url(fonts/Grenouille.ttf);
+}
+
+@font-face {
+    font-family: Hacked;
+    src: url(fonts/Hacked.ttf);
+}
+
+@font-face {
+    font-family: Helvetica Neue;
+    src: url(fonts/HelveticaNeue.otf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(fonts/Inter.otf);
+}
+
+@font-face {
+    font-family: Intro Black Alt;
+    src: url(fonts/IntroBlackAlt.otf);
+}
+
+@font-face {
+    font-family: JetBrains Mono;
+    src: url(fonts/JetBrainsMono.ttf);
+}
+
+@font-face {
+    font-family: Ka Callista;
+    src: url(fonts/KaCallista.ttf);
+}
+
+@font-face {
+    font-family: Keleti;
+    src: url(fonts/Keleti.ttf);
+}
+
+@font-face {
+    font-family: KillCrazye;
+    src: url(fonts/KillCrazy.otf);
+}
+
+@font-face {
+    font-family: Kizo;
+    src: url(fonts/Kizo.otf);
+}
+
+@font-face {
+    font-family: Literata;
+    src: url(fonts/Literata.ttf);
+}
+
+@font-face {
+    font-family: Lora;
+    src: url(fonts/Lora.ttf);
+}
+
+@font-face {
+    font-family: Marta Italic;
+    src: url(fonts/MartaItalic.otf);
+}
+
+@font-face {
+    font-family: Misto;
+    src: url(fonts/Misto.ttf);
+}
+
+@font-face {
+    font-family: Monotype Corsiva;
+    src: url(fonts/MonotypeCorsiva.ttf);
+}
+
+@font-face {
+    font-family: Mont ExtraLight;
+    src: url(fonts/MontExtraLight.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat.ttf);
+}
+
+@font-face {
+    font-family: Movie;
+    src: url(fonts/Movie.ttf);
+}
+
+@font-face {
+    font-family: Muller Regular;
+    src: url(fonts/MullerRegular.otf);
+}
+
+@font-face {
+    font-family: Museo Cyrillic;
+    src: url(fonts/MuseoCyrillic.otf);
+}
+
+@font-face {
+    font-family: Neo Sans;
+    src: url(fonts/NeoSans.otf);
+}
+
+@font-face {
+    font-family: New Baskerville;
+    src: url(fonts/NewBaskerville.otf);
+}
+
+@font-face {
+    font-family: NFC Font;
+    src: url(fonts/NFCFont.ttf);
+}
+
+@font-face {
+    font-family: Noah;
+    src: url(fonts/Noah.ttf);
+}
+
+@font-face {
+    font-family: Nostalgia;
+    src: url(fonts/Nostalgia.ttf);
+}
+
+@font-face {
+    font-family: Oks;
+    src: url(fonts/Oks.otf);
+}
+
+@font-face {
+    font-family: Oranienbaum;
+    src: url(fonts/Oranienbaum.ttf);
+}
+
+@font-face {
+    font-family: Palaceo f Sports;
+    src: url(fonts/PalaceofSports.otf);
+}
+
+@font-face {
+    font-family: PF Centro Slab Pro;
+    src: url(fonts/PFCentroSlabPro.otf);
+}
+
+@font-face {
+    font-family: PF Din Text Pro;
+    src: url(fonts/PFDinTextPro.otf);
+}
+
+@font-face {
+    font-family: PF Regal Pro;
+    src: url(fonts/PFRegalPro.otf);
+}
+
+@font-face {
+    font-family: Playfair Display;
+    src: url(fonts/PlayfairDisplay.ttf);
+}
+
+@font-face {
+    font-family: PT Astra Serif;
+    src: url(fonts/PTAstraSerif.ttf);
+}
+
+@font-face {
+    font-family: PT Mono;
+    src: url(fonts/PTMono.ttf);
+}
+
+@font-face {
+    font-family: PT Root;
+    src: url(fonts/PTRoot.ttf);
+}
+
+@font-face {
+    font-family: PT Sans;
+    src: url(fonts/PTSans.ttf);
+}
+
+@font-face {
+    font-family: Qanelas;
+    src: url(fonts/Qanelas.ttf);
+}
+
+@font-face {
+    font-family: Remains;
+    src: url(fonts/Remains.otf);
+}
+
+@font-face {
+    font-family: Road Rage;
+    src: url(fonts/RoadRage.ttf);
+}
+
+@font-face {
+    font-family: Rodchenko Condensed;
+    src: url(fonts/RodchenkoCondensed.ttf);
+}
+
+@font-face {
+    font-family: Rosalinda;
+    src: url(fonts/Rosalinda.ttf);
+}
+
+@font-face {
+    font-family: Rotonda;
+    src: url(fonts/Rotonda.ttf);
+}
+
+@font-face {
+    font-family: Ruberoid;
+    src: url(fonts/Ruberoid.otf);
+}
+
+@font-face {
+    font-family: Rum Raisin;
+    src: url(fonts/RumRaisin.otf);
+}
+
+@font-face {
+    font-family: Sansation;
+    src: url(fonts/Sansation.ttf);
+}
+
+@font-face {
+    font-family: Spectral;
+    src: url(fonts/Spectral.ttf);
+}
+
+@font-face {
+    font-family: Spectral SC;
+    src: url(fonts/SpectralSC.ttf);
+}
+
+@font-face {
+    font-family: Sreda;
+    src: url(fonts/Sreda.ttf);
+}
+
+@font-face {
+    font-family: Steelfish;
+    src: url(fonts/Steelfish.ttf);
+}
+
+@font-face {
+    font-family: Stinger;
+    src: url(fonts/Stinger.ttf);
+}
+
+@font-face {
+    font-family: Stolzl;
+    src: url(fonts/Stolzl.otf);
+}
+
+@font-face {
+    font-family: Sverdlovsk;
+    src: url(fonts/Sverdlovsk.otf);
+}
+
+@font-face {
+    font-family: Tactic Sans;
+    src: url(fonts/TacticSans.otf);
+}
+
+@font-face {
+    font-family: Thin Skinned;
+    src: url(fonts/ThinSkinned.otf);
+}
+
+@font-face {
+    font-family: Trajan Pro;
+    src: url(fonts/TrajanPro.otf);
+}
+
+@font-face {
+    font-family: TT Commons;
+    src: url(fonts/TTCommons.ttf);
+}
+
+@font-face {
+    font-family: TT Firs Neue;
+    src: url(fonts/TTFirsNeue.otf);
+}
+
+@font-face {
+    font-family: TTfrantz;
+    src: url(fonts/TTfrantz.ttf);
+}
+
+@font-face {
+    font-family: TT Knickerbockers;
+    src: url(fonts/TTKnickerbockers.ttf);
+}
+
+@font-face {
+    font-family: TT Supermolot Neue;
+    src: url(fonts/TTSupermolotNeue.otf);
+}
+
+@font-face {
+    font-family: TT Travels;
+    src: url(fonts/TTTravels.ttf);
+}
+@font-face {
+    font-family: Twentytwelve Sans G;
+    src: url(fonts/TwentytwelveSansG.otf);
+}
+
+@font-face {
+    font-family: Uni Sans;
+    src: url(fonts/UniSans.otf);
+}
+
+@font-face {
+    font-family: Vetren;
+    src: url(fonts/Vetren.ttf);
+}
+@font-face {
+    font-family: Whipsmart;
+    src: url(fonts/Whipsmart.ttf);
+}
+
+@font-face {
+    font-family: Zapf Humanist;
+    src: url(fonts/ZapfHumanist.otf);
+}
+
+@font-face {
+    font-family: Spaceland;
+    src: url(fonts/BravoRG.otf);
+}
+
+#maket {
+    width: 100%; /* Ширина всей таблицы в процентах */
+   }
+   #maket TD {
+    vertical-align: top; /* Вертикальное выравнивание в ячейках */
+   }
+   TD#leftcol {
+    width: 50%; /* Ширина левой колонки в пикселах */
+   }
+  
